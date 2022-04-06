@@ -1,13 +1,16 @@
 import React, { Component } from "react";
+import DadosUsuarios from "./DadosUsuarios";
 
 class App extends Component {
+  
+
   render() {
-    return (
+    return(
       <div>
-        <h1>teste</h1>
+        <DadosUsuarios />
       </div>
     );
   }
 }
 
-export default App;
+export default App
