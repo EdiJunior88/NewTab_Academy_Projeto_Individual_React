@@ -3,8 +3,6 @@ import axios from "axios";
 
 function Pagamento() {
 
-
-
   let cards = [
     // valid card
     {
@@ -20,7 +18,13 @@ function Pagamento() {
     },
   ];
 
-  
+  return(
+     <div>
+       <h1>TESTETETETETETETEE</h1>
+       <h1>TESTETETETETETETEE</h1>
+       <h1>TESTETETETETETETEE</h1>
+     </div>
+  )
 }
 
 export default Pagamento;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Botao from "./Botao";
 import DadosUsuarios from "./DadosUsuarios";
 
 class App extends Component {
