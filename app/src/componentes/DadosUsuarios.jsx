@@ -6,9 +6,6 @@ import Pagamento from './PagamentosUsuarios';
 
 function DadosUsuarios() {
   const [itens, setItens] = useState([]);
-  const [pagamentos, setPagamentos] = useState(false);
-  const [nome, setNome] = useState("");
-  const [idUsuario, setIdUsuario] = useState("");
 
   //Coloca os dados da API (parâmetro) e passa os valores 
   //em um array vazio para controlar o hook (useEffect())

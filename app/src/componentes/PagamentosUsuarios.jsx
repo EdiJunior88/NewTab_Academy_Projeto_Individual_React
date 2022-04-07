@@ -20,11 +20,7 @@ function Pagamento() {
     },
   ];
 
-
-
-  <select name="cartao">
-    <option></option>
-  </select>
+  
 }
 
 export default Pagamento;
