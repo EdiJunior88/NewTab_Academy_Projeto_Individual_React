@@ -10,8 +10,8 @@ function DadosUsuarios() {
   const [nome, setNome] = useState("");
   const [idUsuario, setIdUsuario] = useState("");
 
-  //Coloca os dados da API (parâmetro) e 
-  //passa os valores em um array vazio para controlar o hook
+  //Coloca os dados da API (parâmetro) e passa os valores 
+  //em um array vazio para controlar o hook (useEffect())
   useEffect(() => {
     axios.get('https://www.mocky.io/v2/5d531c4f2e0000620081ddce')
       .then(resposta => {
@@ -22,12 +22,6 @@ function DadosUsuarios() {
         console.log(erro);
       }) */
   }, []);
-
-  function janelaPagamento(item) {
-    setPagamentos(true);
-    setNome(item.nome);
-    setIdUsuario(item.id);
-  }
 
 
   return (
@@ -49,7 +43,7 @@ function DadosUsuarios() {
 
                 <div className='container-botao'>
                   <div className='botao'>
-                    <button onClick={() => janelaPagamento(item)}>Pagar</button>
+                    <button onClick={() => Pagamento()}>Pagar</button>
                   </div>
                 </div>
               </div>
