@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DadosUsuarios from "./DadosUsuarios";
+import Usuario from "./DadoUsuario";
 
 class App extends Component {
   
@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return(
       <div>
-        <DadosUsuarios />
+        <Usuario />
       </div>
     );
   }
