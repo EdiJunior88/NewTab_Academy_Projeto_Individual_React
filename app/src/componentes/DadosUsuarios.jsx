@@ -1,19 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Pagamento from './PagamentosUsuarios';
+
+// Função para mostrar os dados dos usuários através de uma API
 
 function DadosUsuarios() {
   const [itens, setItens] = useState([]);
+  const [pagamentos, setPagamentos] = useState(false);
+  const [nome, setNome] = useState("");
+  const [idUsuario, setIdUsuario] = useState("");
 
+  //Coloca os dados da API (parâmetro) e 
+  //passa os valores em um array vazio para controlar o hook
   useEffect(() => {
     axios.get('https://www.mocky.io/v2/5d531c4f2e0000620081ddce')
       .then(resposta => {
-        console.log(resposta);
         setItens(resposta.data)
+        console.log(resposta);
       })
-      .catch(erro => {
+      /* .catch(erro => {
         console.log(erro);
-      })
-  });
+      }) */
+  }, []);
+
+  function janelaPagamento(item) {
+    setPagamentos(true);
+    setNome(item.nome);
+    setIdUsuario(item.id);
+  }
 
 
   return (
@@ -31,6 +45,12 @@ function DadosUsuarios() {
                   <span>Nome do Usuário: <span>{item.name}</span></span>
                   <span>ID: {item.id}</span>
                   <span>Username: {item.username}</span>
+                </div>
+
+                <div className='container-botao'>
+                  <div className='botao'>
+                    <button onClick={() => janelaPagamento(item)}>Pagar</button>
+                  </div>
                 </div>
               </div>
             </div>
