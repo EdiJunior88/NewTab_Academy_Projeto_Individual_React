@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ModalPagamento from './ModalPagamento';
+import ModalPagamento from '../modal/ModalPagamento';
 
 // Função para mostrar os dados dos usuários através de uma API
-
 function Usuario() {
   const [usuario, setUsuario] = useState([]);
-  const [modalAberto, setModalAberto] = useState(false)
+  const [modalAberto, setModalAberto] = useState(false);
+  const [pagamentoUsuario, setPagamentoUsuario] = useState(null)
 
   //Coloca os dados da API (parâmetro) e passa os valores 
   //em um array vazio para controlar o hook (useEffect())
@@ -20,8 +20,8 @@ function Usuario() {
         console.log(erro);
       }) */
   }, []);
-
-
+  
+  
   return (
     <div>
       <h1>Lista de Usuários</h1>
@@ -47,6 +47,7 @@ function Usuario() {
             </div>
           ))
         }
+        
     </div>
   )
 }

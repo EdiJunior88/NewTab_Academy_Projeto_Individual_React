@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-number-format": "^4.9.1"
+  }
+}
