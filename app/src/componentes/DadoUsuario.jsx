@@ -5,7 +5,7 @@ import ModalPagamento from './ModalPagamento';
 // Função para mostrar os dados dos usuários através de uma API
 
 function Usuario() {
-  const [itens, setItens] = useState([]);
+  const [usuario, setUsuario] = useState([]);
   const [modalAberto, setModalAberto] = useState(false)
 
   //Coloca os dados da API (parâmetro) e passa os valores 
@@ -13,7 +13,7 @@ function Usuario() {
   useEffect(() => {
     axios.get('https://www.mocky.io/v2/5d531c4f2e0000620081ddce')
       .then(resposta => {
-        setItens(resposta.data)
+        setUsuario(resposta.data)
         console.log(resposta);
       })
       /* .catch(erro => {
@@ -26,17 +26,17 @@ function Usuario() {
     <div>
       <h1>Lista de Usuários</h1>
         {
-          itens.map(item => (
-            <div className='container' key={item.id}>
+          usuario.map(usuarios => (
+            <div className='container' key={usuarios.id}>
               <div className='container-lista-usuario'>
                 <div className='foto-usuario'>
-                  <img src={item.img} />
+                  <img src={usuarios.img} />
                 </div>
 
                 <div className='descricao-usuario'>
-                  <span>Nome do Usuário: <span>{item.name}</span></span>
-                  <span>ID: {item.id}</span>
-                  <span>Username: {item.username}</span>
+                  <span>Nome do Usuário: <span>{usuarios.name}</span></span>
+                  <span>ID: {usuarios.id}</span>
+                  <span>Username: {usuarios.username}</span>
                 </div>
 
                 <div className='container-botao'>
