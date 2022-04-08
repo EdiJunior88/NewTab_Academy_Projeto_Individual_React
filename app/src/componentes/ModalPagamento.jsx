@@ -9,8 +9,8 @@ const ModalPagamento = props => {
 
 
   return (
-    //onClick chamando a função onClose para fechar o modal
-    //onClick chamando o evento stopPropagation para parar o "modal-content",
+    //onClick chamando a função onClose para fechar o className="modal"
+    //onClick chamando o evento stopPropagation para parar o className="modal-content",
     //assim o onClick nunca será chamado de novo
     <div className="modal" onClick={props.onClose}>
       <div className="modal-content" onClick={evento => evento.stopPropagation()}>
