@@ -54,9 +54,7 @@ function ModalPagamento(props) {
 
         <div className="modal-body">
           <h4 className="modal-title">Modal</h4>
-          <input 
-            onKeyUp={MascaraMonetaria}
-          />
+          <input onKeyUp={MascaraMonetaria} />
         </div>
 
         <div className="modal-footer">

@@ -20,17 +20,17 @@ function formatarMoeda(value) {
 
   valorFormatado[2] = valorFormatado[2] + ",";
 
-  var array = valorFormatado.reverse().join("").split(",");
-  array[0] = array[0].split("").reverse();
+  var arrayValor = valorFormatado.reverse().join("").split(",");
+  arrayValor[0] = arrayValor[0].split("").reverse();
 
-  for (let index = 2; index < array[0].length; index++) {
+  for (let index = 2; index < arrayValor[0].length; index++) {
     if (index % 3 === 0) {
-      array[0][index] = array[0][index] + ".";
+      arrayValor[0][index] = arrayValor[0][index] + ".";
     }
   }
   
-  array[0] = array[0].reverse().join("");
-  array = array.join(",");
+  arrayValor[0] = arrayValor[0].reverse().join("");
+  arrayValor = arrayValor.join(",");
 
-  return "R$ " + array;
+  return "R$ " + arrayValor;
 }
