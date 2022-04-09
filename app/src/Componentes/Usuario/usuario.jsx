@@ -4,7 +4,7 @@ export function Usuario(props) {
   return (
     <div className='container-lista-usuario'>
       <div className='lista-usuario'>
-        <img src={props.userImg} alt={props.name} />
+        <img src={props.usuarioImagem} alt={props.name} />
         <div className='usuario-perfil'>
           <h4>
             Nome do Usuário: {props.name}
