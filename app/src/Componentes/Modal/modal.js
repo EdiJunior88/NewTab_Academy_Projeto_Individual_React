@@ -3,13 +3,15 @@ import "./modal.css";
 
 export function Modal(props) {
   return (
-    <div className='container'>
-      <div className='container-modal'>
-        <button className='botao-fechar'>
-          <img src='./assets/img/close-button.svg' alt='Fechar' onClick={props.fecharModal} />
-        </button>
+    <div className='modal'>
+      <div className='modal-content'>
+        <div className='modal-header'>
+          <button className='botao'>
+            <img className="svg" src='./assets/img/close-window.png' alt='Fechar' onClick={props.fecharModal} />
+          </button>
+        </div>
 
-        <div className='container-modal-cabecalho'>
+        <div className='modal-body'>
           <span className='titulo'>
             {props.titulo}
           </span>
@@ -18,8 +20,8 @@ export function Modal(props) {
           </span>
         </div>
 
-        <div className='container-modal-corpo'>
-          {props.corpo}
+        <div className='modal-footer'>
+          {props.children}
         </div>
       </div>
     </div>

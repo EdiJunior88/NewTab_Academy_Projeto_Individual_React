@@ -31,6 +31,16 @@ export function Home(props) {
   return (
     <>
       {
+        modalAberto && (
+          <Modal 
+            titulo = "Pagamento para"
+            subtitulo = {pagamento.name}
+            fecharModal = {() => setModalAberto(false)}
+          />
+        )
+      }
+
+      {
         listaUsuario.map((usuario) => {
           return (
             <Usuario 

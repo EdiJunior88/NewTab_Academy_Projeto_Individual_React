@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 5%);
+  background: rgba(0, 0, 0, 0.856);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,4 +27,17 @@
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+}
+
+.botao {
+  display: flex;
+  box-sizing: content-box;
+  background: none;
+  border: none;
+  width: 5%;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
 }
