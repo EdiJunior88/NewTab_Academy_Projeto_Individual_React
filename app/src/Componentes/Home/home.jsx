@@ -32,7 +32,8 @@ export function Home(props) {
     setModalAberto(true);
   }
 
-  //Validação do cartão de crédito selecionado
+  //Validação do valor no input e verificar
+  //qual o cartão de crédito selecionado
   const dadosCartaoDeCredito = async (evento) => {
     evento.preventDefault();
 
@@ -41,6 +42,39 @@ export function Home(props) {
     const cartao = formData.get("selecionaCartao");
     const selecionaCartao = cartoes.find((cartoesObjeto) => cartoesObjeto.card_number === cartao);
   }
+
+  //Função para pegar os dados do pagamento (input)
+  //conforme o cartão selecionado através da API
+
+  
+    await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
+    {
+      method: "POST",
+      body: {
+        card_number: cartao,
+        cvv: selecionaCartao.cvv,
+        expiry_date: selecionaCartao.expiry_date,
+        destination_user_id: pagamento.id,
+        value: value,
+      }
+    }).json();
+
+  
+  // await (
+  //   await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
+  //   {
+  //     method: "POST",
+  //     body: {
+  //       card_number: cartao,
+  //       cvv: selecionaCartao.cvv,
+  //       expiry_date: selecionaCartao.expiry_date,
+  //       destination_user_id: pagamento.id,
+  //       value: value,
+  //     }
+  //   })
+  // ).json();
+
+
 
   return (
     <>
