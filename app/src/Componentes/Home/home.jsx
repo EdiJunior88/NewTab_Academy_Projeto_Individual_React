@@ -41,40 +41,32 @@ export function Home(props) {
     const value = formData.get("valorPago");
     const cartao = formData.get("selecionaCartao");
     const selecionaCartao = cartoes.find((cartoesObjeto) => cartoesObjeto.card_number === cartao);
-  }
 
-  //Função para pegar os dados do pagamento (input)
-  //conforme o cartão selecionado através da API
+    //Função para pegar os dados do pagamento (input)
+    //conforme o cartão selecionado através da API
+    await (
+      await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
+        {
+          method: "POST",
+          body: {
+            card_number: cartao,
+            cvv: selecionaCartao.cvv,
+            expiry_date: selecionaCartao.expiry_date,
 
-  
-    await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
-    {
-      method: "POST",
-      body: {
-        card_number: cartao,
-        cvv: selecionaCartao.cvv,
-        expiry_date: selecionaCartao.expiry_date,
-        destination_user_id: pagamento.id,
-        value: value,
+            destination_user_id: pagamento.id,
+
+            value: value,
+          },
+        })
+      ).json();
+
+      if (cartao === "1111111111111111") {
+        setPagamentoSucesso(true);
+      } else {
+        setPagamentoErro(true);
       }
-    }).json();
-
-  
-  // await (
-  //   await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
-  //   {
-  //     method: "POST",
-  //     body: {
-  //       card_number: cartao,
-  //       cvv: selecionaCartao.cvv,
-  //       expiry_date: selecionaCartao.expiry_date,
-  //       destination_user_id: pagamento.id,
-  //       value: value,
-  //     }
-  //   })
-  // ).json();
-
-
+      setModalAberto(false);
+    };
 
   return (
     <>
