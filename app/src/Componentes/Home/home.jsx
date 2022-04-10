@@ -10,8 +10,9 @@ export function Home(props) {
   const [pagamentoSucesso, setPagamentoSucesso] = useState(false);
   const [pagamentoErro, setPagamentoErro] = useState(false);
 
-  //Coloca os dados da API (parâmetro) e passa os valores 
-  //em um array vazio para controlar o hook (useEffect())
+  //Coletar os dados do do usuário da API e colocar os dados da API 
+  //(dentro do useEffect) para passar os valores em um array vazio
+  //para controlar o hook e não criar um loop na lista
   useEffect(() => {
     axios.get('https://www.mocky.io/v2/5d531c4f2e0000620081ddce')
       .then(resposta => {
@@ -23,6 +24,8 @@ export function Home(props) {
       })
   }, []);
 
+  //Função para ativar o modal de pagamento
+  //e setar o pagamento para o map "listaUsuario"
   function botaoOnClick(usuario) {
     setPagamento(usuario);
     setModalAberto(true);
