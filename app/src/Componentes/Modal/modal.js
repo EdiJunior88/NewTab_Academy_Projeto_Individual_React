@@ -16,7 +16,7 @@ export function Modal(props) {
             {props.titulo}
           </span>
           <span className='subtitulo'>
-            &nbsp;{props.subtitulo}
+            {props.subtitulo}
           </span>
         </div>
 
