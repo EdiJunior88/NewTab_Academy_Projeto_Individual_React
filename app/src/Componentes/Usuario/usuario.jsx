@@ -16,7 +16,7 @@ export function Usuario(props) {
         </div>
       </div>
 
-      <div>
+      <div className='botao'>
         <button onClick={props.onClick}>Pagar</button>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { Modal } from '../Modal/modal';
 import { Usuario } from '../Usuario/usuario';
 import { cartoes } from "../Cartoes/cartoes"
 import { Mascara } from '../Mascara/mascara';
+import home from "../Home/home.css"
 
 export function Home(props) {
   const [listaUsuario, setListaUsuario] = useState([]);
@@ -145,7 +146,7 @@ export function Home(props) {
             titulo = "Recibo de pagamento" 
             fecharModal={() => setPagamentoSucesso(false)}
           >
-            <span>O pagamento foi realizado com sucesso!</span>
+            <span>O pagamento foi concluído com sucesso!</span>
           </Modal>
         )
       }
@@ -157,7 +158,7 @@ export function Home(props) {
             titulo = "Recibo de pagamento" 
             fecharModal={() => setPagamentoErro(false)}
           >
-            <span>O pagamento <strong>não</strong> foi realizado, tente novamente!</span>
+            <span>O pagamento <strong>não</strong> foi concluído com sucesso!</span>
           </Modal>
         )
       }
