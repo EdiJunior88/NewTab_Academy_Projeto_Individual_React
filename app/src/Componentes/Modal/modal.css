@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;500;700&display=swap');
 
 .modal {
   position: fixed;
@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 100;
   color: #fff;
 }
 
@@ -31,6 +31,25 @@
 
 .modal-body, .modal-header {
   background: #1a1c2b;
+}
+
+.modal-footer {
+  display: flex;
+  height: 31.7vh;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texto-rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 .header-botao {
@@ -55,8 +74,9 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
 }
 
 .inputValor, .selectValor {
@@ -89,7 +109,13 @@ input, select {
 }
 
 .botao-submit {
-  font-size: 0.6em;
+  height: 4vh;
+  font-size: 0.8em;
   border-radius: 5px;
   border: 1px solid rgb(158, 158, 158);
+}
+
+.strong {
+  padding: 0px 6px;
+  color: red;
 }

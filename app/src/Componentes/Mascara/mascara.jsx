@@ -1,19 +1,8 @@
-import React from "react";
-
 export function Mascara(event) {
-  const onlyDigits = event.target.value
-    .split("")
-    .filter(s => /\d/.test(s))
-    .join("")
-    .padStart(3, "0")
-  const digitsFloat = onlyDigits.slice(0, -2) + "." + onlyDigits.slice(-2)
-  event.target.value = maskCurrency(digitsFloat)
-}
-
-//Função para formatação monetária em moeda brasileira
-function maskCurrency(valor, locale = 'pt-BR', currency = 'BRL') {
-  return new Intl.NumberFormat(locale, {
-    style: 'currency',
-    currency
-  }).format(valor)
+  const val = event.target.value
+    .replace(/\D/g, '')
+    .replace(/^0*/, '')
+    .padStart(3, '0')
+    
+  event.target.value = 'R$ ' + val.slice(0, -2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ',' + val.slice(-2)
 }

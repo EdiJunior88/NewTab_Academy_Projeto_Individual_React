@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import home from "../Home/home.css"
 import { Modal } from '../Modal/modal';
 import { Usuario } from '../Usuario/usuario';
 import { cartoes } from "../Cartoes/cartoes"
 import { Mascara } from '../Mascara/mascara';
-import home from "../Home/home.css"
 
 export function Home(props) {
   const [listaUsuario, setListaUsuario] = useState([]);
@@ -42,7 +42,7 @@ export function Home(props) {
     const formData = new FormData(evento.target);
     const value = formData.get("valorPago");
     const cartao = formData.get("selecionaCartao");
-    const selecionaCartao = cartoes.find((cartoesObjeto) => cartoesObjeto.card_number === cartao);
+    const selecaoCartao = cartoes.find((cartaoObjeto) => cartaoObjeto.card_number === cartao);
 
     //Função para pegar os dados do pagamento (input)
     //e submeter a requisição "POST" conforme o cartão selecionado
@@ -52,8 +52,8 @@ export function Home(props) {
           method: "POST",
           body: {
             card_number: cartao,
-            cvv: selecionaCartao.cvv,
-            expiry_date: selecionaCartao.expiry_date,
+            cvv: selecaoCartao.cvv,
+            expiry_date: selecaoCartao.expiry_date,
 
             destination_user_id: pagamento.id,
 
@@ -91,7 +91,7 @@ export function Home(props) {
                 placeholder="R$ 0,00"
                 className="inputValor"
                 onKeyUp={Mascara}
-                maxLength="20"
+                maxLength="30"
                 required
               />
 
@@ -149,7 +149,7 @@ export function Home(props) {
             titulo = "Recibo de pagamento" 
             fecharModal={() => setPagamentoSucesso(false)}
           >
-            <span>O pagamento foi concluído com sucesso!</span>
+            <span className='texto-rodape'>O pagamento foi concluído com sucesso!</span>
           </Modal>
         )
       }
@@ -161,7 +161,7 @@ export function Home(props) {
             titulo = "Recibo de pagamento" 
             fecharModal={() => setPagamentoErro(false)}
           >
-            <span>O pagamento <strong>não</strong> foi concluído com sucesso!</span>
+            <span className='texto-rodape'>O pagamento <strong className='strong'>não</strong> foi concluído com sucesso!</span>
           </Modal>
         )
       }

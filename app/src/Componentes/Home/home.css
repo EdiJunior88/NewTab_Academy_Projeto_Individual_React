@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;700&display=swap');
 
 body, h4 {
   padding: 0;
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
 }
 
 .container-lista-usuario {
@@ -15,8 +17,7 @@ body, h4 {
   background-image: linear-gradient(0deg, #1a1c2b, #2d314d);
   border: 1px solid #fff;
   color: #fff;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: lighter;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
 }
 
 .lista-usuario {
