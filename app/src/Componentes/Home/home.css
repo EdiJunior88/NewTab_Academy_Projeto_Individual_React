@@ -1,4 +1,6 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+body, h4 {
   padding: 0;
   margin: 0;
 }
@@ -9,23 +11,42 @@ body {
   box-sizing: content-box;
   align-items: center;
   width: 100%;
-  background: yellow;
-  border: 1px solid black;
+  height: 187px;
+  background-image: linear-gradient(0deg, #1a1c2b, #2d314d);
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: lighter;
 }
 
 .lista-usuario {
   display: flex;
+  align-items: center;
 }
 
-.lista-usuario img {
+.lista-usuario-img {
   border-radius: 50%;
   margin-left: 3em;
 }
 
 .usuario-perfil {
   padding-left: 1em;
+  font-size: 1.1em;
+}
+
+.usuario-perfil :nth-child(1) {
+  color: #d0d862;
 }
 
 .botao {
-  margin-right: 3em;
+  margin-right: 2em;
+  width: 77px;
+  height: 29px;
+  cursor: pointer;
+}
+
+.botao button {
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 1px solid rgb(158, 158, 158);
 }
