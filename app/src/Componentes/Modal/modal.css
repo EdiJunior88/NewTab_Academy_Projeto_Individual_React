@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
 .modal {
   position: fixed;
   left: 0;
@@ -8,15 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
 }
 
 .modal-content {
-  width: 500px;
+  width: 80vw;
   background: #fff;
-}
-
-.modal-header, .modal-footer {
-  padding: 10px;
 }
 
 .modal-title {
@@ -24,20 +26,65 @@
 }
 
 .modal-body {
-  padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.botao {
+.modal-body, .modal-header {
+  background: #1a1c2b;
+}
+
+.header-botao {
+  position: relative;
   display: flex;
   box-sizing: content-box;
-  background: none;
+  justify-content: flex-end;
+  box-sizing: border-box;
   border: none;
-  width: 5%;
+  background: none;
+  width: 100%;
+  padding: 5px 5px 0px 0px;
 }
 
-.svg {
-  width: 100%;
+.botao-png {
+  width: 5%;
   height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.inputValor, .selectValor {
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  color: #d0d862;
+}
+
+input {
+  width: 45%;
+  height: 30px;
+}
+
+select {
+  width: 46.5%;
+  height: 35px;
+}
+
+input, select {
+  font-size: 0.6em;
+  border-radius: 5px;
+  border: 1px solid rgb(158, 158, 158);
+}
+
+.botao-submit {
+  font-size: 0.6em;
+  border-radius: 5px;
+  border: 1px solid rgb(158, 158, 158);
 }

@@ -6,8 +6,8 @@ export function Modal(props) {
     <div className='modal'>
       <div className='modal-content'>
         <div className='modal-header'>
-          <button className='botao'>
-            <img className="svg" src='./assets/img/close-window.png' alt='Fechar' onClick={props.fecharModal} />
+          <button className='header-botao'>
+            <img className="botao-png" src='./assets/img/close-window.png' alt='Fechar' onClick={props.fecharModal} />
           </button>
         </div>
 

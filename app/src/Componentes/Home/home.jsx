@@ -95,7 +95,10 @@ export function Home(props) {
                 required
               />
 
-              <select name="selecionaCartao">
+              <select 
+                name="selecionaCartao"
+                className='selectValor'
+              >
                 <option selected disabled>
                   Selecione o Cartão de Crédito
                 </option>
