@@ -95,6 +95,9 @@ export function Home(props) {
               />
 
               <select name="selecionaCartao">
+                <option selected disabled>
+                  Selecione o Cartão de Crédito
+                </option>
                 {
                   cartoes.map((cartao) => {
                     return (

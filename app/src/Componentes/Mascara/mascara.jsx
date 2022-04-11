@@ -10,6 +10,7 @@ export function Mascara(event) {
   event.target.value = maskCurrency(digitsFloat)
 }
 
+//Função para formatação monetária em moeda brasileira
 function maskCurrency(valor, locale = 'pt-BR', currency = 'BRL') {
   return new Intl.NumberFormat(locale, {
     style: 'currency',
