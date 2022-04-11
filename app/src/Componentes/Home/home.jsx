@@ -60,6 +60,10 @@ export function Home(props) {
         })
       ).json();
 
+      //Condicional para verificar se o cartão selecionado for igual ao da API
+      //forçando a mensagem de erro ao selecionar o cartão "4111111111111234"
+      //se for "true" abre uma mensagem que o pagamento foi realizado
+      //se for "false" abre uma mensagem que o pagamento foi recusado
       if (cartao === "1111111111111111") {
         setPagamentoSucesso(true);
       } else {
@@ -71,6 +75,7 @@ export function Home(props) {
   return (
     <>
       {
+        //Modal dados de pagamento e seleção de cartão de crédito
         modalAberto && (
           <Modal 
             titulo = "Pagamento para "
@@ -110,6 +115,7 @@ export function Home(props) {
       }
 
       {
+        //Listagem de usuários com nome, ID e Username
         listaUsuario.map((usuario) => {
           return (
             <Usuario 
@@ -124,6 +130,30 @@ export function Home(props) {
             />
           )
         })
+      }
+
+      {
+        //Modal de pagamento caso seja true (verdadeiro)
+        pagamentoSucesso && (
+          <Modal
+            titulo = "Recibo de pagamento" 
+            fecharModal={() => setPagamentoSucesso(false)}
+          >
+            <span>O pagamento foi realizado com sucesso!</span>
+          </Modal>
+        )
+      }
+
+      {
+        //Modal de pagamento caso seja false (falso)
+        pagamentoErro && (
+          <Modal
+            titulo = "Recibo de pagamento" 
+            fecharModal={() => setPagamentoErro(false)}
+          >
+            <span>O pagamento <strong>não</strong> foi realizado, tente novamente!</span>
+          </Modal>
+        )
       }
     </>
   );
