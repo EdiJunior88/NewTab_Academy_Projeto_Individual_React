@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import home from "../Home/home.css"
+import Cabecalho from '../Cabecalho/cabecalho';
 import { Modal } from '../Modal/modal';
 import { Usuario } from '../Usuario/usuario';
 import { cartoes } from "../Cartoes/cartoes"
@@ -77,6 +78,11 @@ export function Home(props) {
   return (
     <>
       {
+        //Cabçalho da Página
+        <Cabecalho />
+      }
+
+      {
         //Modal dados de pagamento e seleção do cartão de crédito
         modalAberto && (
           <Modal 
@@ -99,9 +105,6 @@ export function Home(props) {
                 name="selecionaCartao"
                 className='selectValor'
               >
-                <option selected disabled>
-                  Selecione o Cartão de Crédito
-                </option>
                 {
                   cartoes.map((cartao) => {
                     return (

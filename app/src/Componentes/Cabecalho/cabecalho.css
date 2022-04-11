@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-cabecalho {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+.cabecalho-imagem {
+  width: 10vw;
+}
