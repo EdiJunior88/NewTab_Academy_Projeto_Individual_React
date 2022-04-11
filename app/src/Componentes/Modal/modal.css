@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.5em;
   font-weight: bold;
   color: #fff;
 }
@@ -56,11 +55,16 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 15px 0px 15px 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .inputValor, .selectValor {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.titulo, .subtitulo {
+  font-size: 1.3em;
 }
 
 .subtitulo {
@@ -81,6 +85,7 @@ input, select {
   font-size: 0.6em;
   border-radius: 5px;
   border: 1px solid rgb(158, 158, 158);
+  font-size: 0.8em;
 }
 
 .botao-submit {
