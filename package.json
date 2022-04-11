@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.26.1",
-    "react-modal": "^3.14.4"
+    "react-modal": "^3.14.4",
+    "react-router-dom": "^6.3.0"
   }
 }

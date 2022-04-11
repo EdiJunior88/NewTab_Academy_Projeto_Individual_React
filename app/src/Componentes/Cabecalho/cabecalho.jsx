@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import cabecalho from "./cabecalho.css";
+import Sobre from "../Sobre/sobre";
 
 class Cabecalho extends Component {
   render() {
