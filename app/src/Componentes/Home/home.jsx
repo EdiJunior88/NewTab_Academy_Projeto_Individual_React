@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Modal } from '../Modal/modal';
 import { Usuario } from '../Usuario/usuario';
 import { cartoes } from "../Cartoes/cartoes"
+import { Mascara } from '../Mascara/mascara';
 
 export function Home(props) {
   const [listaUsuario, setListaUsuario] = useState([]);
@@ -88,7 +89,8 @@ export function Home(props) {
                 type="text"
                 placeholder="R$ 0,00"
                 className="inputValor"
-                onKeyUp={}
+                onKeyUp={Mascara}
+                maxLength="20"
                 required
               />
 
