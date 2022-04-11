@@ -32,8 +32,8 @@ export function Home(props) {
     setModalAberto(true);
   }
 
-  //Validação do valor no input e verificar
-  //qual o cartão de crédito selecionado
+  //Validação do valor no input
+  //verificar qual o cartão de crédito selecionado
   const dadosCartaoDeCredito = async (evento) => {
     evento.preventDefault();
 
@@ -43,7 +43,7 @@ export function Home(props) {
     const selecionaCartao = cartoes.find((cartoesObjeto) => cartoesObjeto.card_number === cartao);
 
     //Função para pegar os dados do pagamento (input)
-    // e submeter a requisição "POST" conforme o cartão selecionado
+    //e submeter a requisição "POST" conforme o cartão selecionado
     await (
       await fetch("https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989", 
         {
@@ -75,7 +75,7 @@ export function Home(props) {
   return (
     <>
       {
-        //Modal dados de pagamento e seleção de cartão de crédito
+        //Modal dados de pagamento e seleção do cartão de crédito
         modalAberto && (
           <Modal 
             titulo = "Pagamento para "
@@ -88,6 +88,7 @@ export function Home(props) {
                 type="text"
                 placeholder="R$ 0,00"
                 className="inputValor"
+                onKeyUp={}
                 required
               />
 
@@ -133,7 +134,7 @@ export function Home(props) {
       }
 
       {
-        //Modal de pagamento caso seja true (verdadeiro)
+        //Modal de pagamento sucesso no pagamento (true)
         pagamentoSucesso && (
           <Modal
             titulo = "Recibo de pagamento" 
@@ -145,7 +146,7 @@ export function Home(props) {
       }
 
       {
-        //Modal de pagamento caso seja false (falso)
+        //Modal de pagamento erro no pagamento (false)
         pagamentoErro && (
           <Modal
             titulo = "Recibo de pagamento" 
