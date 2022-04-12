@@ -19,9 +19,23 @@
 
 <hr>
 
-<p>Screenshots</p>
+<h3>Screenshots</h3>
 
+<p><strong>Lista de usuários</strong></p>
 
+![Imagem](screenshot01.png)
+
+<p><strong>Modal de pagamento e listagem de cartões</strong></p>
+
+![Imagem](screenshot02.png)
+
+<p><strong>Modal de pagamento concluído com sucesso</strong></p>
+
+![Imagem](screenshot03.png)
+
+<p><strong>Modal de erro no pagamento</strong></p>
+
+![Imagem](screenshot04.png)
 
 <hr>
 
