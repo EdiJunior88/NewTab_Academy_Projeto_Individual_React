@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { Home } from './Componentes/Home/home';
 import reportWebVitals from './reportWebVitals';
 
-
-
 const container = document.getElementById('root')
 const root = createRoot(container)
 
