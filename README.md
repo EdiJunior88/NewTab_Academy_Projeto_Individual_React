@@ -30,7 +30,7 @@
 <p><strong>Modal de pagamento e listagem de cartões</strong></p>
 
 <p align="center">
-  <img src="screenshot02.png" width="60%">
+  <img src="screenshot02.png" width="50%">
 </p>
 
 <p><strong>Modal de pagamento concluído com sucesso</strong></p>
