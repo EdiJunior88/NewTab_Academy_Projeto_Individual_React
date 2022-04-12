@@ -15,7 +15,9 @@
 
 <hr>
 
-![Gif](projeto.gif)
+<p align="center">
+  ![Gif](projeto.gif)
+</p>
 
 <hr>
 
