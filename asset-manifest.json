@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NewTab_Academy_Projeto_Individual_React/static/css/main.827739ad.css",
+    "main.js": "/NewTab_Academy_Projeto_Individual_React/static/js/main.a60c3d3e.js",
+    "static/js/787.c1112931.chunk.js": "/NewTab_Academy_Projeto_Individual_React/static/js/787.c1112931.chunk.js",
+    "index.html": "/NewTab_Academy_Projeto_Individual_React/index.html",
+    "main.827739ad.css.map": "/NewTab_Academy_Projeto_Individual_React/static/css/main.827739ad.css.map",
+    "main.a60c3d3e.js.map": "/NewTab_Academy_Projeto_Individual_React/static/js/main.a60c3d3e.js.map",
+    "787.c1112931.chunk.js.map": "/NewTab_Academy_Projeto_Individual_React/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.827739ad.css",
+    "static/js/main.a60c3d3e.js"
+  ]
+}
