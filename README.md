@@ -29,15 +29,21 @@
 
 <p><strong>Modal de pagamento e listagem de cartões</strong></p>
 
-<img src="screenshot02.png" width="40%">
+<p align="center">
+  <img src="screenshot02.png" width="60%">
+</p>
 
 <p><strong>Modal de pagamento concluído com sucesso</strong></p>
 
-![Imagem](screenshot03.png)
+<p align="center">
+  <img src="screenshot03.png" width="60%">
+</p>
 
 <p><strong>Modal de erro no pagamento</strong></p>
 
-![Imagem](screenshot04.png)
+<p align="center">
+  <img src="screenshot04.png" width="60%">
+</p>
 
 <hr>
 
