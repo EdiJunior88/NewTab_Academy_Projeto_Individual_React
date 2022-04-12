@@ -15,28 +15,39 @@
 
 <hr>
 
-![Gif](https://i.imgur.com/0zEOzSM.gif)
+![Gif](projeto.gif)
 
 <hr>
 
+<p>Screenshots</p>
+
+
+
+<hr>
+
+<h3>Divisão de atividades</h3>
+
 <ul>
-  <li>Divisão de atividades</li>
-  
+  <li><strong>ATIVIDADE 1 – REACT:</strong></li>
   <ul>
-    <li>ATIVIDADE 1 – REACT:</li>
+    <li>Desenvolvimento da página de listagem de usuários</li>
   </ul>
 </ul>
 
-Desenvolvimento da página de listagem de usuários
+<ul>
+  <li><strong>ATIVIDADE 2 – REACT:</strong></li>
+  <ul>
+    <li>Desenvolvimento das páginas de pagamentos e recibos</li>
+  </ul>
+</ul>
 
-ATIVIDADE 2 – REACT:
 
-Desenvolvimento das páginas de pagamentos e recibos
+<h3>Prazo de entrega</h3>
 
-Prazo de entrega
+<p>Para as atividades, considerando uma dedicação de 4 horas por dia, estimamos que seja possível que você consiga realizá-las em aproximadamente uma semana cada. Se conseguir antes, fantástico! Já pode partir para a atividade seguinte e caminhar para o fechamento do módulo.</p>
 
-Para as atividades, considerando uma dedicação de 4 horas por dia, estimamos que seja possível que você consiga realizá-las em aproximadamente uma semana cada. Se conseguir antes, fantástico! Já pode partir para a atividade seguinte e caminhar para o fechamento do módulo.
+<p>Aliás, o prazo para terminar esse módulo você já conhece, e após esse projeto individual vamos chegando ao final dessa etapa, onde você terá um conteúdo focado em empregabilidade para assistir enquanto aguarda nossa validação da entrega das atividades realizadas e agendamento da mentoria de feedback.</p>
 
-Aliás, o prazo para terminar esse módulo você já conhece, e após esse projeto individual vamos chegando ao final dessa etapa, onde você terá um conteúdo focado em empregabilidade para assistir enquanto aguarda nossa validação da entrega das atividades realizadas e agendamento da mentoria de feedback.
+<p>Caso precise de mais tempo que a estimativa de uma semana que citamos acima, sem problemas também, temos o prazo limite do módulo que precisa ser respeitado, e você pode ir administrando sua dedicação nesse período. Sempre que tiver dúvidas que não esteja conseguindo resolver por aí, lembre-se dos nossos recursos no Discord e facilitadores para te apoiar.</p>
 
-Caso precise de mais tempo que a estimativa de uma semana que citamos acima, sem problemas também, temos o prazo limite do módulo que precisa ser respeitado, e você pode ir administrando sua dedicação nesse período. Sempre que tiver dúvidas que não esteja conseguindo resolver por aí, lembre-se dos nossos recursos no Discord e facilitadores para te apoiar.
+<h4><b>Status do Projeto:</b> :white_check_mark: Concluído</h4>
