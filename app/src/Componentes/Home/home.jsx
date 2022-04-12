@@ -78,7 +78,6 @@ export function Home(props) {
   return (
     <>
       {
-        //Cabçalho da Página
         <Cabecalho />
       }
 

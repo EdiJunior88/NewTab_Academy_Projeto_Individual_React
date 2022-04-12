@@ -81,6 +81,7 @@ form {
 
 .inputValor, .selectValor {
   margin-bottom: 20px;
+  font-size: 0.9em;
 }
 
 .titulo, .subtitulo {
@@ -102,7 +103,6 @@ select {
 }
 
 input, select {
-  font-size: 0.6em;
   border-radius: 5px;
   border: 1px solid rgb(158, 158, 158);
   font-size: 0.8em;

@@ -17,14 +17,14 @@ body {
 .cabecalho {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   width: 100%;
-  margin: 0px 15px;
 }
 
 .cabecalho-imagem {
   width: 8vw;
+  margin-right: 30px;
 }
 
 .titulo-cabecalho {
@@ -32,11 +32,4 @@ body {
   font-size: 2em;
   font-weight: 600;
   color: #fff;
-}
-
-.titulo-sobre {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.2em;
-  font-weight: 300;
-  color: rgb(238, 255, 5);
 }
