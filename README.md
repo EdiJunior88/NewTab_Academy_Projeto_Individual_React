@@ -25,11 +25,11 @@
 
 <p><strong>Lista de usuários</strong></p>
 
-![Imagem](screenshot01.png)
+<img src="screenshot01.png">
 
 <p><strong>Modal de pagamento e listagem de cartões</strong></p>
 
-![Imagem](screenshot02.png)
+<img src="screenshot02.png" width="40%">
 
 <p><strong>Modal de pagamento concluído com sucesso</strong></p>
 
