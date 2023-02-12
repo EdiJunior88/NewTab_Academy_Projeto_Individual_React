@@ -1,5 +1,6 @@
 import React from "react";
 import "./modal.css";
+import Fechar from "../../Imagens/close-window.png"
 
 export function Modal(props) {
   return (
@@ -7,7 +8,7 @@ export function Modal(props) {
       <div className='modal-content'>
         <div className='modal-header'>
           <button className='header-botao'>
-            <img className="botao-png" src='./assets/img/close-window.png' alt='Fechar' onClick={props.fecharModal} />
+            <img className="botao-png" src={Fechar} alt='Fechar' onClick={props.fecharModal} />
           </button>
         </div>
 

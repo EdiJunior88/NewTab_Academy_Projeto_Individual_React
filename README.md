@@ -1,9 +1,13 @@
-<h1>NewTab Academy</h1>
+<img src="./app/src/Imagens/newtab_academy_logo.png" width="60%">
 <h2>Projeto REACT (individual)</h2>
 
 <h3>Descrição</h3>
 
+<hr>
+
 <p>O objetivo é construir uma aplicação que simula o envio de dinheiro para uma outra pessoa, via cartão de crédito.</p>
+
+<hr>
 
 <h3>Fluxo das telas</h3>
 
@@ -16,7 +20,7 @@
 <hr>
 
 <p align="center">
-  <img src="projeto.gif">
+  <img src="./app/src/Imagens/projeto.gif">
 </p>
 
 <hr>
@@ -25,24 +29,24 @@
 
 <p><strong>Lista de usuários</strong></p>
 
-<img src="screenshot01.png">
+<img src="./app/src/Imagens/screenshot01.png">
 
 <p><strong>Modal de pagamento e listagem de cartões</strong></p>
 
 <p align="center">
-  <img src="screenshot02.png" width="50%">
+  <img src="./app/src/Imagens/screenshot02.png" width="50%">
 </p>
 
 <p><strong>Modal de pagamento concluído com sucesso</strong></p>
 
 <p align="center">
-  <img src="screenshot03.png" width="60%">
+  <img src="./app/src/Imagens/screenshot03.png" width="60%">
 </p>
 
 <p><strong>Modal de erro no pagamento</strong></p>
 
 <p align="center">
-  <img src="screenshot04.png" width="60%">
+  <img src="./app/src/Imagens/screenshot04.png" width="60%">
 </p>
 
 <hr>
@@ -63,6 +67,7 @@
   </ul>
 </ul>
 
+<hr>
 
 <h3>Prazo de entrega</h3>
 
