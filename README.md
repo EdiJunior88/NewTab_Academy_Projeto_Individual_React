@@ -1,9 +1,7 @@
-<img src="./app/src/Imagens/newtab_academy_logo.png" width="60%">
+<img src="./app/src/Imagens/newtab_academy_logo.png" width="55%">
 <h2>Projeto REACT (individual)</h2>
 
 <h3>Descrição</h3>
-
-<hr>
 
 <p>O objetivo é construir uma aplicação que simula o envio de dinheiro para uma outra pessoa, via cartão de crédito.</p>
 
