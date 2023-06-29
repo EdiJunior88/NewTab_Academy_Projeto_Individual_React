@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "../Home/home.css";
 import Cabecalho from "../Cabecalho/cabecalho";
@@ -22,10 +22,10 @@ export function Home() {
       .get("https://www.mocky.io/v2/5d531c4f2e0000620081ddce")
       .then((resposta) => {
         setListaUsuario(resposta.data);
-        console.log(resposta);
+        // console.log(resposta);
       })
       .catch((erro) => {
-        console.log(erro);
+        console.log("ERRO NA API", erro);
       });
   }, []);
 
