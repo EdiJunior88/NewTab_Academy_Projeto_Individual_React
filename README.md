@@ -1,4 +1,4 @@
-<img src="./app/src/Imagens/newtab_academy_logo.webp" width="55%">
+<img src="./moneyapp/src/Imagens/newtab_academy_logo.webp" width="55%">
 <h2>Projeto REACT (individual)</h2>
 
 <h3>Descrição</h3>
@@ -18,7 +18,7 @@
 <hr>
 
 <p align="center">
-  <img src="./app/src/Imagens/projeto.gif">
+  <img src="./moneyapp/src/Imagens/projeto.gif">
 </p>
 
 <hr>
@@ -27,24 +27,24 @@
 
 <p><strong>Lista de usuários</strong></p>
 
-<img src="./app/src/Imagens/screenshot01.webp">
+<img src="./moneyapp/src/Imagens/screenshot01.webp">
 
 <p><strong>Modal de pagamento e listagem de cartões</strong></p>
 
 <p align="center">
-  <img src="./app/src/Imagens/screenshot02.webp" width="50%">
+  <img src="./moneyapp/src/Imagens/screenshot02.webp" width="50%">
 </p>
 
 <p><strong>Modal de pagamento concluído com sucesso</strong></p>
 
 <p align="center">
-  <img src="./app/src/Imagens/screenshot03.webp" width="60%">
+  <img src="./moneyapp/src/Imagens/screenshot03.webp" width="60%">
 </p>
 
 <p><strong>Modal de erro no pagamento</strong></p>
 
 <p align="center">
-  <img src="./app/src/Imagens/screenshot04.webp" width="60%">
+  <img src="./moneyapp/src/Imagens/screenshot04.webp" width="60%">
 </p>
 
 <hr>

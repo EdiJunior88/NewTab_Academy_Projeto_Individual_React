@@ -52,7 +52,7 @@ const Home = () => {
     //e submeter a requisição "POST" conforme o cartão selecionado
     await (
       await fetch(
-        "https://run.mocky.io/v3/533cd5d7-63d3-4488-bf8d-4bb8c751c989",
+        "https://run.mocky.io/v3/dbcf87cc-4be8-49af-b7c4-2d2c518d475e",
         {
           method: "POST",
           body: {
