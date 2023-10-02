@@ -7,7 +7,7 @@ import { Usuario } from "../Usuario/usuario";
 import { cartoes } from "../Cartoes/cartoes";
 import { Mascara } from "../Mascara/mascara";
 
-export function Home() {
+const Home = () => {
   const [listaUsuario, setListaUsuario] = useState([]);
   const [modalAberto, setModalAberto] = useState(false);
   const [pagamento, setPagamento] = useState(null);
@@ -165,3 +165,5 @@ export function Home() {
     </>
   );
 }
+
+export default Home;
