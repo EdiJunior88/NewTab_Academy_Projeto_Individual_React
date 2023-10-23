@@ -15,7 +15,7 @@ export function Usuario({ usuarioImagem, name, username, id, onClick }) {
           <h4>{name}</h4>
 
           <h4>
-            ID: {id} - Username: {username}
+            ID: {id} - Username: @{username}
           </h4>
         </div>
       </div>
@@ -34,6 +34,6 @@ Usuario.propTypes = {
   usuarioImagem: PropTypes.string,
   name: PropTypes.string,
   username: PropTypes.string,
-  id: PropTypes.number,
+  id: PropTypes.string,
   onClick: PropTypes.func,
 };

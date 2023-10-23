@@ -19,10 +19,10 @@ const Home = () => {
   //para controlar o hook e não criar um loop na lista
   useEffect(() => {
     axios
-      .get("https://www.mocky.io/v2/5d531c4f2e0000620081ddce")
+      .get("https://653681fdbb226bb85dd23c8f.mockapi.io/users")
       .then((resposta) => {
         setListaUsuario(resposta.data);
-        // console.log(resposta);
+        console.log(resposta);
       })
       .catch((erro) => {
         console.log("ERRO NA API", erro);
@@ -52,7 +52,7 @@ const Home = () => {
     //e submeter a requisição "POST" conforme o cartão selecionado
     await (
       await fetch(
-        "https://run.mocky.io/v3/dbcf87cc-4be8-49af-b7c4-2d2c518d475e",
+        "https://run.mocky.io/v3/f6e57d25-e3e3-46dd-9067-dd363a082629",
         {
           method: "POST",
           body: {
