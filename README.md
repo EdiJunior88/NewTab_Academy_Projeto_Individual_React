@@ -13,7 +13,19 @@
 
 <hr>
 
-<p><strong>Link do Projeto:</strong> <a href="https://newtab-academy-react.netlify.app/" target="__blank">https://newtab-academy-react.netlify.app/</a></p>
+<strong>Link do Projeto:</strong> <a href="https://newtab-academy-react.netlify.app/" target="__blank">https://newtab-academy-react.netlify.app/</a>
+
+<hr>
+
+<h3>Tecnologias Utilizadas</h3>
+
+- <img width='25' height='25' src='https://img.stackshare.io/service/1020/OYIaJ1KK.png' alt='React'/> [React](https://reactjs.org/) – Javascript UI Libraries
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/no-img-open-source.png' alt='axios'/> [axios](https://github.com/mzabriskie/axios) – Javascript Utilities & Libraries
+- <img width='25' height='25' src='https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png' alt='Vite'/> [Vite](https://vitejs.dev/) – JS Build Tools / JS Task Runners
+
+Para ver todas as tecnologias [clique aqui](/techstack.md)
 
 <hr>
 
@@ -75,4 +87,4 @@
 
 <p>Caso precise de mais tempo que a estimativa de uma semana que citamos acima, sem problemas também, temos o prazo limite do módulo que precisa ser respeitado, e você pode ir administrando sua dedicação nesse período. Sempre que tiver dúvidas que não esteja conseguindo resolver por aí, lembre-se dos nossos recursos no Discord e facilitadores para te apoiar.</p>
 
-<h4><b>Status do Projeto:</b> :white_check_mark: Concluído</h4>
+<h4><b>Status do projeto:</b> ✅ Concluído</h4>
