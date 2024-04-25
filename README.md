@@ -13,7 +13,7 @@
 
 <hr>
 
-<strong>Link do Projeto:</strong> <a href="https://newtab-academy-react.netlify.app/" target="__blank">https://newtab-academy-react.netlify.app/</a>
+<strong>Link do Projeto:</strong> <a href="https://edijunior88-newtab-react.netlify.app/" target="__blank">https://edijunior88-newtab-react.netlify.app/</a>
 
 <hr>
 
